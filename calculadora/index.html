@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoraa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Calculadora Simples
+        </h1>
+    </header>
+    <div>
+        <input class="display">
+        <button class="op-button" onclick="limpar_tela()">AC</button>
+        <button class="op-button" onclick="invert('+/-')">+/-</button>
+        <button class="azul-button" onclick="adicionarCaracter('/')">/</button>
+        <button class="azul-button" onclick="adicionarCaracter('x')">x</button>
+        <button class="cinza-button" onclick="adicionarCaracter('1')">1</button>
+        <button class="cinza-button" onclick="adicionarCaracter('2')">2</button>
+        <button class="cinza-button" onclick="adicionarCaracter('3')">3</button>
+        <button class="azul-button" onclick="adicionarCaracter('+')">+</button>
+        <button class="cinza-button" onclick="adicionarCaracter('4')">4</button>
+        <button class="cinza-button" onclick="adicionarCaracter('5')">5</button>
+        <button class="cinza-button" onclick="adicionarCaracter('6')">6</button>
+        <button class="azul-button" onclick="adicionarCaracter('-')">-</button>
+        <button class="cinza-button" onclick="adicionarCaracter('7')">7</button>
+        <button class="cinza-button" onclick="adicionarCaracter('8')">8</button>
+        <button class="cinza-button" onclick="adicionarCaracter('9')">9</button>
+        <button class="zero-button" onclick="adicionarCaracter('0')">0</button>
+        <button class="azul-claro-button" onclick="calcular()">=</button>
+        <button class="cinza-button" onclick="adicionarCaracter('.')">.</button>
+    </div>
+</body>
+<script src=" ./scripts.js"></script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario BrosS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mascara-formulario" onclick="EsconderOrcamento()"></div>
+    <div class="cabeçalho">
+        <img src="./assets/logo-header.png" alt="logo-mario">
+        <a>Inicio</a>
+        <a>Nossos Servoços</a>
+    </div>
+    <div class="caixa-mae">
+        <div class="caixa-primcipal">
+            <img src="./assets/logo.png" alt="">
+            <p class="texto"> 🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧</p>
+            <p> Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+            <button onclick="PedirOrcamento()">Entre em Contato</button>
+        </div>
+        <div>
+            <img src="./assets/boneco-pedreiro.png" alt="logo mario e luigi" class="logo">
+        </div>
+    </div>
+    <div class="caixa-video">
+        <video src="./assets/fundo-construçao.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5535991699244&text=quero%20ajuda%20dos%20irm%C3%A3os%20Mario"
+        class="whats">
+        <img src="./assets/whatsapp.png" alt="link para o whatsapp">
+    </a>
+    <form class="formulario">
+        <input placeholder="Digite seu Nome">
+        <input placeholder="Digite seu Contato">
+        <textarea placeholder="Digite Como Posso te Ajudar"></textarea>
+        <button class="enviar">Pedir Orçamento</button>
+    </form>
+</body>
+<script src="./script.js"></script>
+
+</html>
