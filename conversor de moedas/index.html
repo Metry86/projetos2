@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <h1>Conversor de Moedas</h1>
+    <div class="container">
+        <div class="caixa1">
+            <div>
+                <h2>Converter de </h2>
+                <select class="moedaOrigem">
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                </select>
+            </div>
+
+            <div>
+                <h2>Converter para </h2>
+                <select class="moeda-selecionada">
+                    <option value="dolar">Dólar Americano (USD)</option>
+                    <option value="real">Real Brasileiro (BRL)</option>
+                    <option value="euro">Euro (EUR)</option>
+                </select>
+            </div>
+            <div>
+                <h2>valor a ser convertido</h2>
+                <input type="number" class="valorDigitado" placeholder="10.000">
+            </div>
+        </div>
+        <div>
+            <button class="Converter">Converter</button>
+            <div id="resultado"></div>
+        </div>
+        <div class="bandeiras">
+            <div>
+                <img class="imagem" src="./assets/img/bandeira-do-brasil.png" alt="">
+                <p>Real</p>
+                <p class="real">R$ 0,00</p>
+            </div>
+            <div>
+                <img class="imagem" src="./assets/img/estados-unidos.png" alt="">
+                <p>Dolar</p>
+                <p class="dolar">US$ 0,00</p>
+            </div>
+            <!-- <div>
+                <img class="imagem" src="./assets/img/euro.png" alt="">
+                <p>Euro</p>
+                <p class="euro">£ 0,00</p>
+            </div> -->
+        </div>
+    </div>
+    <div class="grafico" id="chart"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="./script.js"></script>
+
+</html>

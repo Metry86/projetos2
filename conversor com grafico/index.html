@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+</head>
+
+<body>
+    <main>
+        <section class="moedas">
+            <h2>Conversor de Moedas</h2>
+            <div class="container">
+                <div class="selecionar">
+                    <input type="text" class="valor" value="R$ 1.000,00">
+                    <div class="moeda-selecionada">
+                        <div class="selecionado">
+
+                            <ul class="fixa"><span class="fi fi-br fis"></span>BRL</ul>
+                        </div>
+                        <ul class="caixa-moedas">
+                            <li><span class="fi fi-us fis"></span>USD</li>
+                            <li><span class="fi fi-eu fis"></span>EUR</li>
+                            <li><span class="fi fi-gb fis"></span>GBP</li>
+                            <li><span class="fi fi-jp fis"></span>JPY</li>
+                            <li><span class="fi fi-au fis"></span>AUD</li>
+                            <li><span class="fi fi-in fis"></span>INR</li>
+                            <li><span class="fi fi-de fis"></span>EUR</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="botao-converter">
+                    <i><box-icon name='transfer-alt'></box-icon></i>
+                </div>
+                <div>
+                    <button onclick="converter">
+                        <img src="./assets/img/transfer-alt-regular-24.png" alt="">
+                    </button>
+                </div>
+                <div class="selecionar">
+                    <input type="text" class="valor" value="US$ 200,00">
+                    <div class="moeda-selecionada">
+                        <div class="selecionado">
+
+                            <ul class="fixa"><span class="fi fi-us fis"></span>USD</ul>
+                        </div>
+                        <ul class="caixa-moedas">
+                            <li><span class="fi fi-br fis"></span>BRL</li>
+                            <li><span class="fi fi-eu fis"></span>EUR</li>
+                            <li><span class="fi fi-gb fis"></span>GBP</li>
+                            <li><span class="fi fi-jp fis"></span>JPY</li>
+                            <li><span class="fi fi-au fis"></span>AUD</li>
+                            <li><span class="fi fi-in fis"></span>INR</li>
+                            <li><span class="fi fi-de fis"></span>EUR</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cambio">
+            <h2>Taxa de Cambio</h2>
+            <div class="container">
+
+            </div>
+        </section>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
